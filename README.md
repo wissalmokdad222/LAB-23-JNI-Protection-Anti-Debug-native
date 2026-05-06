@@ -2,7 +2,7 @@
 
 Ce projet est un laboratoire complet démontrant l'utilisation de **Java Native Interface (JNI)** pour exécuter du code C++ au sein d'une application Android, alliant performance et sécurité.
 
-## 🛠 Étapes de Réalisation
+##  Étapes de Réalisation
 
 ### 1. Fondamentaux du JNI
 - **Configuration** : Activation de `externalNativeBuild` avec CMake dans `build.gradle.kts`.
@@ -21,7 +21,7 @@ Implémentation d'une variante avancée où le code C++ lève directement des ex
 
 ---
 
-## 🔍 Analyse & Validation
+##  Analyse & Validation
 
 ### Scénarios de Test
 1. **Exécution normale** : Statut "OK", fonctions natives autorisées.
@@ -35,7 +35,7 @@ Implémentation d'une variante avancée où le code C++ lève directement des ex
 
 ---
 
-## 💡 Bonnes Pratiques JNI
+##  Bonnes Pratiques JNI
 - **Minimiser les transitions** : Réduire les allers-retours Java ↔ Natif pour limiter le surcoût.
 - **Libération des ressources** : Utilisation rigoureuse de `ReleaseStringUTFChars` et `ReleaseIntArrayElements`.
 - **Séparation des responsabilités** : Isoler la logique métier du code défensif.
@@ -43,7 +43,7 @@ Implémentation d'une variante avancée où le code C++ lève directement des ex
 
 ---
 
-## 🎓 Résumé pédagogique
+##  Résumé pédagogique
 Dans ce laboratoire, l’application Android :
 - Charge une bibliothèque native avec `System.loadLibrary`.
 - Appelle une méthode JNI `isDebugDetected()`.
@@ -53,10 +53,9 @@ Dans ce laboratoire, l’application Android :
 
 Ce TP consolide à la fois les connaissances JNI, la structure d’un module natif Android, l’usage de CMake, la journalisation native et l’idée de défense en profondeur côté mobile.
 
-## 🏁 Conclusion
+##  Conclusion
 JNI est une passerelle puissante entre Java et C++, mais il faut l’utiliser avec méthode. Le bon usage consiste donc à réserver JNI aux traitements réellement utiles : **calcul intensif**, **bibliothèques natives existantes**, **logique sensible**, ou **services bas niveau**.
 
 Avec ce laboratoire, l’application **JNIDemo** devient un excellent point de départ pour des projets plus avancés comme le chiffrement natif, la détection anti-debug avancée, le traitement d’image ou la sécurité applicative Android.
 
----
-*Projet réalisé avec succès - Expertise NDK Android.*
+
